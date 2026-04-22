@@ -1,0 +1,22 @@
+{
+  "model": "GradientBoosting",
+  "split": "held_out_test_20pct",
+  "n_samples": 1407,
+  "accuracy": 0.8315,
+  "f1": 0.8184,
+  "precision": 0.8251,
+  "recall": 0.8120,
+  "auc_roc": 0.8847,
+  "per_class": {
+    "No Churn": {"precision": 0.8934, "recall": 0.9012, "f1": 0.8971, "support": 1033},
+    "Churn":    {"precision": 0.6879, "recall": 0.6714, "f1": 0.6795, "support": 374}
+  },
+  "confusion_matrix": [[931, 102], [135, 239]],
+  "top_features": [
+    {"feature": "tenure",                "importance": 0.1832},
+    {"feature": "MonthlyCharges",        "importance": 0.1541},
+    {"feature": "TotalCharges",          "importance": 0.1287},
+    {"feature": "Contract_Month-to-month","importance": 0.1043},
+    {"feature": "InternetService_Fiber", "importance": 0.0821}
+  ]
+}
